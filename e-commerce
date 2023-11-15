@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product-card {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1em;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            color: #e8491d;
+        }
+    </style>
+</head>
+ <nav>
+        <ul>
+            <li><a href="homepage.html">homepage</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="shopping.html">shopping</a></li>
+            <li><a href="useraccount.html">useraccount</a></li>
+            <li><a href="checkout.html">checkout</a></li>
+            <li><a href="order.html">order</a></li>
+        </ul>
+    </nav>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Simple E-commerce Store</h1>
+    </header>
+
+    <!-- Product Catalog -->
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1" class="product-img">
+            <div class="product-info">
+                <h3 class="product-title">Product 1</h3>
+                <p class="product-price">$19.99</p>
+                <button onclick="addToCart('Product 1', 19.99)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product 2" class="product-img">
+            <div class="product-info">
+                <h3 class="product-title">Product 2</h3>
+                <p class="product-price">$29.99</p>
+                <button onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Add more product cards as needed -->
+
+    </div>
+
+    <!-- Shopping Cart -->
+    <div id="s">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script>
+        let cartItems = [];
+        let total = 0;
+
+        function addToCart(product, price) {
+            cartItems.push({ product, price });
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartList = document.getElementById('cart-items');
+            const totalSpan = document.getElementById('total');
+
+            cartList.innerHTML = '';
+            total = 0;
+
+            cartItems.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.product} - $${item.price.toFixed(2)}`;
+                cartList.appendChild(listItem);
+
+                total += item.price;
+            });
+
+            totalSpan.textContent = total.toFixed(2);
+        }
+
+        function checkout() {
+            alert(`Total Amount: $${total.toFixed(2)}\nThank you for your purchase!`);
+            cartItems = [];
+            updateCart();
+        }
+    </script>
+
+</body>
+
+</html>
+    

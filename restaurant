@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Experience the finest culinary delights in a cozy atmosphere.</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <!-- Your about us content goes here -->
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+        <!-- Your menu content goes here -->
+    </section>
+
+    <!-- Reservations -->
+    <section id="reservations">
+        <!-- Your reservations content goes here -->
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <!-- Your gallery content goes here -->
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact">
+        <!-- Your contact us content goes here -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Fictional Restaurant. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional: JavaScript files or additional scripts go here -->
+
+</body>
+
+</html>

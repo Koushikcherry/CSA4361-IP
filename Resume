@@ -4,64 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fictional Restaurant</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Koushik - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>Koushik</h1>
+        <p>Web Developer | Designer</p>
+    </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="reservation.html">Reservation</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-
-    <!-- Homepage -->
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to Our Restaurant</h1>
-            <p>Experience the finest culinary delights in a cozy atmosphere.</p>
-            <a href="#menu" class="cta-button">View Menu</a>
-        </div>
-    </section>
-
-    <!-- About Us -->
     <section id="about">
-        <!-- Your about us content goes here -->
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself, your skills, and interests.</p>
     </section>
 
-    <!-- Menu -->
-    <section id="menu">
-        <!-- Your menu content goes here -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <!-- Add more skills as needed -->
+        </ul>
     </section>
 
-    <!-- Reservations -->
-    <section id="reservations">
-        <!-- Your reservations content goes here -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery">
-        <!-- Your gallery content goes here -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Provide a downloadable link to your resume (e.g., PDF).</p>
+        <a href="#">Download Resume</a>
     </section>
 
-    <!-- Contact Us -->
-    <section id="contact">
-        <!-- Your contact us content goes here -->
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Fictional Restaurant. All rights reserved.</p>
+        <p>Contact: koushiknathreddy41@gmail.com | Connect on LinkedIn | GitHub</p>
     </footer>
-
-    <!-- Optional: JavaScript files or additional scripts go here -->
-
 </body>
 
 </html>
